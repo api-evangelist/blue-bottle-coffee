@@ -1,8 +1,24 @@
 aid: blue-bottle-coffee
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/blue-bottle-coffee.png
 name: Blue Bottle Coffee *
-description: 'Blue Bottle Coffee * is a company surfaced as a portfolio company of gv, kindred-ventures,
-  true-ventures and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: 'Blue Bottle Coffee is a specialty coffee roaster and retailer founded in 2002 in Oakland,
+  California by James Freeman, known for freshly roasted single-origin beans, seasonal blends, cafes, and
+  a direct-to-consumer subscription service that ships coffee within 48 hours of roasting. A majority stake
+  was acquired by Nestle in 2017. The company operates cafes across the United States and Asia and sells
+  whole-bean coffee, brewing equipment, and gift subscriptions through its e-commerce site. Surfaced as a
+  portfolio company of gv, kindred-ventures and true-ventures; no public developer API program has been
+  found. Sector: consumer.'
 url: https://raw.githubusercontent.com/api-evangelist/blue-bottle-coffee/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Coffee
+- Retail
+- E-Commerce
+- Food and Beverage
+- Subscription
+- Direct to Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/blue-bottle-coffee-domain-security.yml
 - type: Website
   url: https://www.bluebottlecoffee.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
